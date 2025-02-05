@@ -47,7 +47,7 @@ const Dashboard: React.FC = () => {
       if (!isIntersecting(newBlock)) {
         setBlocks([...blocks, newBlock])
       } else {
-        alert("Этот блок не может быть размещен здесь, так как он пересекается с другим блоком.")
+        alert("Этот блок нельзя разместить.")
       }
     }
   }

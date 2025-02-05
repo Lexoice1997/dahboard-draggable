@@ -7,7 +7,7 @@ interface BlockProps {
   setBlocks: React.Dispatch<React.SetStateAction<BlockModel[]>>
 }
 
-const Block: React.FC<BlockProps> = ({ block, setBlocks }) => {
+const Block = ({ block, setBlocks }: BlockProps) => {
   const [isDragging, setIsDragging] = useState(false)
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 })
   const [isResizing, setIsResizing] = useState(false)
