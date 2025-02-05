@@ -1,0 +1,48 @@
+.App {
+  display: flex;
+  width: 100vw;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #ddd;
+  padding: 10px;
+}
+
+.dashboard {
+  box-sizing: border-box;
+  position: relative;
+  flex: 1;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid #ccc;
+  width: 100%;
+}
+
+.draggable-block {
+  height: 30px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  cursor: move;
+}
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  position: absolute;
+}
+
+.resize-handle {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  cursor: nwse-resize;
+}
